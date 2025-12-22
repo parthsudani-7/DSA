@@ -3,6 +3,7 @@ using namespace std;
 
 void InsertionSort(int arr[], int n) {
     int i = 1;
+    
     while (i < n) {
         int temp = arr[i];
         int j = i - 1;
