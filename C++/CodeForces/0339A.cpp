@@ -12,7 +12,6 @@ int main() {
             nums.push_back(s[i]);
         }
     }
-
     sort(nums.begin(), nums.end());
 
     for (int i = 0; i < nums.length(); i++) {
