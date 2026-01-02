@@ -1,19 +1,20 @@
-// User function Template for Java
-
 class Solution {
-    void leftRotate(int arr[], int n) {
-        // code here
-        int size = arr.length;
-        n = n % size;
+    void leftRotate(int[] arr, int d) {
+        int n = arr.length;
+        d = d % n;
 
-        for (int j = 0; j < n; j++) {
-            int temp = arr[0];
-            for (int i = 1; i < size; i++) {
-                arr[i - 1] = arr[i];
-            }
-            arr[size - 1] = temp;
+        reverse(arr, 0, d - 1);
+        reverse(arr, d, n - 1);
+        reverse(arr, 0, n - 1);
+    }
+
+    void reverse(int[] arr, int l, int r) {
+        while (l < r) {
+            int temp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = temp;
+            l++;
+            r--;
         }
-        
     }
 }
-
