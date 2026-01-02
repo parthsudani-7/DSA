@@ -14,7 +14,6 @@ public class Main {
                         min = dist;
                     }
                 }
-
                 prev = i;
             }
         }
