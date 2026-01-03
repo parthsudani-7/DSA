@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] arr = {1, 9, 2, 5, 7, 6, 5, 4, 11};
+        int[] arr = {2 , 9, 2, 5, 7, 6, 5, 4};
         int prev = -1;       
         int min = 100000;     
         int count = 0;
